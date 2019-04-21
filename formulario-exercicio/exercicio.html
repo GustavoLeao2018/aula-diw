@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        
+        <title>Exercício - Desenvolvimento de Interfaces Web</title>
+        
+        
+    
+    </head>
+    <body>
+
+        <form action="recebedados.php" method="POST">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label for="nome">
+                    Nome completo:
+                </label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required autofocus/>
+                <br/>
+                
+                
+                <p>
+                    Seu gênero:               
+                <label for="genero_feminino">
+                    <input type="radio" name="genero" id="genero_feminino" value="Feminino" checked>
+                    Feminino
+                </label>
+
+                <label for="genero_masculino">
+                    <input type="radio" name="genero" id="genero_masculino" value="Masculino">
+                    Masculino
+                </label>
+
+                <label for="genero_outro">
+                    <input type="radio" name="genero" id="genero_outro" value="Outro">
+                    Outro
+                </label>
+                <label for="genero_pnd">
+                    <input type="radio" name="genero" id="genero_pnd" value="Prefiro não responder">
+                    Prefiro não responder
+                </label>
+                </p>
+
+                
+                <label for="data_de_nascimento">
+                    Data de nascimento:
+                </label>
+                <input type="date" name="data_de_nascimento" id="data_de_nascimento" />
+                <br/>
+
+                <label for="email">
+                    Email:
+                </label>
+                <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+                <br/>
+
+                <label for="url">
+                    Digite a url do seu site:
+                </label>
+                <input type="url" name="url" id="url" placeholder="https://seusite.com.br"/>
+                <br/>
+                
+                <label for="endereco">
+                    Digite seu endereço:
+                </label>
+                <textarea name="endereco" id="endereco" required placeholder="Rua, Número, Complemento"></textarea>
+                <br/>
+
+                <label for="telefone">
+                    Telefone:
+                </label>
+                <input type="tel" name="telefone" id="telefone" placeholder="Digite seu telefone">
+                <br/>
+
+                <label for="cidade">
+                    Escolha sua Cidade:
+                </label>
+                <select name="cidade" id="cidade">
+                    <option value="">Selecione ..</option>
+                    <option value="Viamão">Viamão</option>
+                    <option value="Alvorada">Alvorada</option>
+                    <option value="Canoas">Canoas</option>
+                    <option value="Esteio">Esteio</option>
+                    <option value="Gravataí">Gravataí</option>
+                    <option value="Novo Hamburgo">Novo Hamburgo</option>
+                    <option value="Passo Fundo">Passo Fundo</option>
+                    <option value="Pelotas">Pelotas</option>
+                    <option value="Porto Alegre">Porto Alegre</option>
+                    <option value="São Leopoldo">São Leopoldo</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Dados Profissionais</legend>
+                <label for="areas_de_atuacao">
+                    Áreas de atuação:
+                </label>
+                <select name="areas_de_atuacao" id="areas_de_atuacao" multiple>
+                    <option value="">Selecione ...</option>
+                    <option value="design">Design</option>
+                    <option value="desenvolvimentoFrontEnd">Desenvolvimento Front-End</option>
+                    <option value="desenvolvimentoBack-End">Desenvolvimento Back-End</option>
+                    <option value="engenhariaDeSoftware">Engenharia de Software</option>
+                    <option value="bancoDeDados">Banco de Dados</option>
+                    <option value="analiseDeTestes">Análise de Testes</option>
+                    <option value="analiseDeNegocios">Análise de Negócios</option>
+                    <option value="manutencao">Manutenção</option>
+                </select>
+                <br/>
+
+                <label for="formacao_academica">
+                    Formação:
+                </label>
+                <input list="formacao" id="formacao_academica" name="formacao">
+                <datalist id="formacao">
+                    <option value="">Selecione ...</option>
+                    <option value="Ensino Fundamental"></option>
+                    <option value="Ensino Médio"></option>
+                    <option value="Ensino Superior"></option>
+                    <option value="Especialização"></option>
+                    <option value="Mestrado"></option>
+                    <option value="Douturado"></option>
+                </datalist>
+                <br/>
+                
+                <label for="historico">
+                    Breve histórico profissional:
+                </label>
+                <textarea name="historico" id="historico" placeholder="Digite aqui seu histórico profissional"></textarea>
+                <br/>
+                
+                <label for="curriculo">
+                    Selecione seu currículo:
+                </label>
+                <input type="file" name="curriculo" id="curriculo">
+                <br/>
+                
+                <label for="horas_semanais">
+                    Disponibilidade de horas semanais:
+                </label>
+                <input type="number" min="10" max="40" step="10" name="horas_semanais" id="horas_semanais">
+                <br/>
+            </fieldset>
+            <fieldset>
+                <legend>Agendamento de Intrevista</legend>
+                <label for="data_intrevista">
+                    Data para a instrevista:
+                </label>
+                <input type="date" id="data_intrevista" name="data_intrevista">
+                <br/>
+                
+                <label for="hora_intrevista">
+                    Horário para a intrevista:
+                </label>
+                <input type="time" id="hora_intrevista" name="hora_intrevista">
+                <br/>
+
+            </fieldset>
+            <input type="reset" value="Limpar"/>
+            <input type="submit" value="Enviar"/>
+        </form>
+        
+        <footer>
+            <p>Versão Final em <a href=""></p>
+        </footer>
+    </body>
+</html>
